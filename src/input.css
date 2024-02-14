@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-slate-600 bg-opacity-40 backdrop-blur-sm;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-line {
+  @apply my-2 block h-[2px] w-[30px] bg-white;
+}
+
+.hamburger-active>span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active>span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active>span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.swiper-slide {
+  display: flex !important;
+}
+
+.swiper-button-prev {
+  padding: 5px;
+  left: 0;
+
+}
+
+.swiper-button-next {
+  padding: 5px;
+  right: 0;
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important;
+  font-weight: bold ;
+  color: #B19604;
+}
+
+.swiper:hover>.swiper-button-prev,
+.swiper:hover>.swiper-button-next {
+  display: flex;
+}
+.swiper-pagination{
+  position: relative !important;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet-active {
+  background-color: #B19604 !important;
+}
+
+.line-clamp-8-custom {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
